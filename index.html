@@ -20,7 +20,7 @@
             <button type="button btn-1" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
               <span class="glyphicon glyphicon-th" ></span>                       
             </button>
-            <img src="/svg/Layer1.svg" alt="title">
+            <img src="Layer1.svg" alt="title">
           </div>
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
@@ -56,7 +56,7 @@
                 </div>
             </div>
             <div class="col-sm-6">
-                <img src="/svg/Group1.svg" alt="studying" class="right-img">
+                <img src="Group1.svg" alt="studying" class="right-img">
             </div>
         </div>
     </div>
@@ -65,15 +65,15 @@
         <h1 class="title-tag func">Cum funcționează?</h1>
         <div class="container">
         <div class="col-sm-4">
-            <img src="/svg/Group6.svg" class="number" alt="number1">
+            <img src="Group6.svg" class="number" alt="number1">
             <p>Realizezi un cont pe platformă în care introduci câteva detalii personale (nu vă faceți griji, profesorii nu or să va descopere) și materiile la care ai nevoie de ajutor.</p>
         </div>
         <div class="col-sm-4">
-            <img src="/svg/Group7.svg" class="number"  alt="number2">
+            <img src="Group7.svg" class="number"  alt="number2">
             <p>Străbați platforma în căutare de studenți care oferă servicii la materiile dorite sau te rogi la Sfântul 5 să primești mesaj de la cineva care te descoperă și e dispus să te salveze.</p>
         </div>
         <div class="col-sm-4">
-            <img src="/svg/Group8.svg" class="number"  alt="number3">
+            <img src="Group8.svg" class="number"  alt="number3">
             <p>După ce stabiliți o sumă care oricum este de zeci de ori mai mare decât la alte universități, aștepti ca noul vostru amic să vă încarce soluția pe platformă. Jumătate din plată oferiți în avans, restul după ce vă vedeți intrat în examen.</p>
         </div>
         </div>
@@ -88,25 +88,25 @@
             <div class="col-sm-6">
                 <form action="">
                     <div class="form-group">
-                    <label for="name">Nume:</label>
-                    <input type="text" class="form-control" id="name">
+                    <label for="name">Nume<span style="color: #FF0000">*</span>:</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
                     </div>
                     <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" class="form-control" id="email">
+                        <label for="email">Email<span style="color: #FF0000">*</span>:</label>
+                        <input type="email" class="form-control" id="email" name="fromEmail" required>
                     </div>
                     <div class="form-group">
-                        <label for="injuratura">Înjurătura:</label>
-                        <textarea class="form-control" rows="3" id="injuratura"></textarea>
+                        <label for="injuratura">Înjurătură<span style="color: #FF0000">*</span>:</label>
+                        <textarea class="form-control" rows="3" id="injuratura" name="message" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-1">Trimite</button>
+                    <button type="submit" class="btn btn-1" name="sendMailButt">Trimite</button>
                 </form>
             </div>
         </div>
     </div>
 
     <footer>
-        <img src="/svg/Group5.svg" alt="logo" style="margin-bottom: 1%;">
+        <img src="Group5.svg" alt="logo" style="margin-bottom: 1%;">
         <p style="color: white;">Copyright 2020 | Cine ne pârăște o mierlește.</p>
     </footer>
 
@@ -128,7 +128,8 @@
             <div class="titlecontainer">
                 <p style="margin-top: 2%;">Plângeri introduse până acum:</p>
             </div>
-            <div style = "color: #263238;"id="result"></div>
+            <div style = "color: #263238;"id="result">
+            </div>
         </form>
     </div>
 
